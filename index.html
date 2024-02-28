@@ -1,0 +1,131 @@
+<!-- https://github.com/amine-lotfi -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="/assets/fav-img.png">
+
+    <title>Foodies</title>
+</head>
+
+<body>
+
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="/assets/fav-img.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Foodies
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="getMeals('Italian')">Italy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="getMeals('Japanese')">Japan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="getMeals('Greek')">Greece</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="getMeals('Portuguese')">Portugal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="getMeals('Spanish')">Spain</a>
+                    </li>
+                </ul>
+
+                <div class="col-md-4">
+                    <input class="form-control me-2" id="search-input" type="search" placeholder="Search a meal..">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main-section">
+        <div class="container">
+
+            <div class="row d-flex align-items-center min-vh-100 justify-content-center" id="wrapper">
+
+                <div class="row text-center" id="quote-wrapper">
+                    <h2 class="fw-bold m-0 p-0">
+                        ❝ Savor the flavors, embrace the moments, and let every bite tell a delicious story. ❞
+                    </h3>
+
+                    <p class="text-lead text-light fw-bold bg-dark">Enter a meal in the search bar, or pick a country!</p>
+                </div>
+
+                <!-- <div class="card me-3" style="width: 18rem;">
+
+                        <img src="/assets/fav-img.png" class="card-img-top img-fluid w-75 pt-2 ms-auto me-auto">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Details</a>
+                        </div>
+
+                    </div> -->
+
+                <!-- <div class="col-md-8">
+
+                    <div class="card">
+
+                        <img src="/assets/fav-img.png" class="card-img-top img-fluid w-75 pt-2 ms-auto me-auto">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Teriyaki Chicken</h5>
+                            <p class="text-lead">Category: Chicken</p>
+                            <p class="text-lead">Origin: Japanese</p>
+                            <p class="card-text">Instructions: Preheat oven to 350° F. Spray a 9x13-inch baking pan with non-stick spray.\r\nCombine soy sauce, ½ cup water, brown sugar, ginger and garlic in a small saucepan and cover. Bring to a boil over medium heat. Remove lid and cook for one minute once boiling.\r\nMeanwhile, stir together the corn starch and 2 tablespoons of water in a separate dish until smooth. Once sauce is boiling, add mixture to the saucepan...</p>
+                            <p class="text-lead"><i class="bi bi-youtube display-6 text-danger"></i> <a href=""></a></p>
+                            <a href="#" class="btn btn-outline-danger float-end">Close</a>
+                        </div>
+
+                    </div>
+
+                </div> -->
+
+            </div>
+
+        </div>
+
+            <!-- footer -->
+    <footer class="footer text-center mt-5">
+
+        <small class="text-lead d-inline fw-bold">
+            Amine Lotfi<br>All Rights Reserved.<br>
+            Special thanks to <a href="https://www.themealdb.com/api.php" target="_blank">TheMealDB API</a>
+        </small>
+
+    </footer>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- script -->
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
