@@ -22,10 +22,11 @@ body {
 
 .main-section {
     padding: 20px;
-    background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('/assets/back.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .main-section h2 {
@@ -40,16 +41,37 @@ body {
 
 .nav-link:hover {
     color: var(--main-color);
-    transition: color .5s ease;
+    transition: all .5s ease-in-out;
 }
 
 #search-input {
     border: 3px solid var(--main-color);
+    border-radius: 25px;
+    padding-left: 35px;
 }
 
 #search-input:focus {
     outline: none;
     box-shadow: none;
+}
+
+#search-input::placeholder {
+    color: var(--text-color);
+}
+
+.bi-search {
+    position: absolute;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    top: 12px;
+    padding-left: 10px;
+}
+
+/* to hide the search icon on small screens */
+@media (max-width: 991px) {
+    .bi-search {
+        display: none;
+    }
 }
 
 /* changes the selected text color and bg color */
@@ -70,12 +92,12 @@ footer small {
 
     from {
       opacity: 0;
-      transform: translateY(-200px)
+      transform: scale(0)
     }
 
     to {
       opacity: 1;
-      transform: translateY(0);
+      transform: scale(1);
     }
 
 }

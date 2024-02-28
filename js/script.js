@@ -28,7 +28,7 @@ async function searchMealByName(input) {
         if (Array.isArray(data.meals)) {
 
             wrapper.innerHTML = data.meals.map(meal => `
-                    <div class="card me-3 mt-3" style="width: 18rem;">
+                    <div class="card me-3 mt-3 get-animated" style="width: 18rem;">
 
                         <img src="${meal.strMealThumb}" class="card-img-top img-fluid w-75 pt-2 ms-auto me-auto rounded-circle">
 
@@ -44,7 +44,7 @@ async function searchMealByName(input) {
         } else {
 
             wrapper.innerHTML = `
-                <h5 class="text-danger text-center"><i class="bi bi-info-circle"></i> No meals found in the data.</h5>
+                <h5 class="text-danger text-center get-animated"><i class="bi bi-info-circle"></i> No meals found in the data.</h5>
             `;
             console.error("No meals found in the data.");
         }
@@ -70,7 +70,7 @@ async function getMeals(country) {
         if (Array.isArray(data.meals)) {
 
             wrapper.innerHTML = data.meals.map(meal => `
-                    <div class="card me-3 mt-3" style="width: 18rem;">
+                    <div class="card me-3 mt-3 get-animated" style="width: 18rem;">
 
                         <img src="${meal.strMealThumb}" class="card-img-top img-fluid w-75 pt-2 ms-auto me-auto rounded-circle">
 
@@ -86,7 +86,7 @@ async function getMeals(country) {
         } else {
 
             wrapper.innerHTML = `
-                <h5 class="text-danger text-center"><i class="bi bi-info-circle"></i> No meals found in the data.</h5>
+                <h5 class="text-danger text-center get-animated"><i class="bi bi-info-circle"></i> No meals found in the data.</h5>
             `;
             console.error("No meals found in the data.");
         }
@@ -109,7 +109,7 @@ function showQuoteWrapper() {
 
     wrapper.innerHTML = `
     
-    <div class="row text-center" id="quote-wrapper">
+    <div class="row text-center get-animated" id="quote-wrapper">
         <h2 class="fw-bold m-0 p-0">
             ❝ Savor the flavors, embrace the moments, and let every bite tell a delicious story. ❞
         </h3>
@@ -157,7 +157,7 @@ async function fetchWithDishID(dishID) {
 
         wrapper.innerHTML = `
         
-        <div class="col-md-8 m-3">
+        <div class="col-md-8 m-3 get-animated">
 
         <div class="card">
 
